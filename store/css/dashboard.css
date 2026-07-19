@@ -1,0 +1,153 @@
+:root {
+    --bg-darker: #0f1115;
+    --bg-card: #181b22;
+    --accent-red: #ff3e3e;
+    --text-main: #ffffff;
+    --border-color: #232731;
+    --warning-yellow: #e0a800;
+}
+
+body {
+    background-color: var(--bg-darker);
+    color: var(--text-main);
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.dashboard-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dash-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.dash-logo span {
+    color: var(--accent-red); font-weight: bold; 
+}
+
+.back-site-btn {
+    color: var(--text-main);
+    text-decoration: none;
+    border: 1px solid var(--border-color);
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.main-dash-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+@media(min-width: 768px) {
+    .main-dash-content { 
+        flex-direction: row; 
+        align-items: flex-start; 
+    }
+    .form-container { 
+        width: 350px; 
+        flex-shrink: 0; 
+    }
+    .table-container { 
+        flex-grow: 1; 
+    }
+}
+
+.form-container, .table-container {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-group { 
+    margin-bottom: 15px; 
+    text-align: left; 
+}
+
+.form-group label { 
+    display: block; 
+    font-size: 0.85rem; 
+    color: #a0a5b1; 
+    margin-bottom: 5px; 
+}
+
+.form-group input, .form-group select {
+    width: 100%; 
+    padding: 10px; 
+    background: #1f232d; 
+    border: 1px solid #3b3232; 
+    color: #fff; 
+    border-radius: 6px; 
+    outline: none;
+}
+
+.form-group input:focus { 
+    border-color: var(--accent-red); 
+}
+
+.btn-primary {
+    width: 100%; 
+    padding: 12px; 
+    background: var(--accent-red); 
+    color: white; 
+    border: none; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    font-weight: bold;
+}
+
+.modern-table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    text-align: left;
+}
+
+.modern-table th, .modern-table td {
+    padding: 10px; 
+    border-bottom: 1px solid var(--border-color); 
+}
+
+.modern-table th {
+    background: #0f1115; 
+}
+
+.action-btn { 
+    padding: 4px 8px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    margin-right: 5px; 
+}
+
+.edit-btn {
+    background: var(--warning-yellow); color: white; 
+}
+
+.delete-btn { 
+    background: var(--accent-red); color: white; 
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadillac Store - DRIVEX</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cad.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="logo">
+                <a href="store.html"><span>DRIVE</span>X</a>
+            </div>
+            <nav class="nav-links">
+                <a href="#"><i class="fa-sharp fa-solid fa-house"></i> Home</a>
+                <a href="#brands"> <i class="fa-sharp fa-solid fa-store"></i> Stores</a>
+                <a href="#features"><i class="fa-sharp fa-solid fa-square-star"></i> Features</a>
+            </nav>
+            <div class="auth-buttons">
+                <a href="signin.html" class="btn-register">Sign In</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section-m">
+
+    </section>
+
+    <section id="brands" class="brands-section container">
+        <div class="section-title">
+            <h2>Explore Cars by Category</h2>
+            <p>Choose the car category that matches your lifestyle and explore our available vehicles. </p>
+        </div>
+    
+        <div class="brands-grid">
+            <div class="brand-card cad-sport-card">
+                <div class="card-bg"></div>
+                <div class="brand-info">
+                    <h3>Sports</h3>
+                    <p>Speed, power, and superhuman performance all in one place.</p>
+                    <a href="Cadillac.html?category=Sports" class="view-store-btn">Visit Store</a>
+                </div>
+            </div>
+
+            <div class="brand-card cad-suv-card">
+                <div class="card-bg"></div>
+                <div class="brand-info">
+                    <h3>SUV</h3>
+                    <p>Spacious, comfortable, and built to conquer off-road adventures.</p>
+                    <a href="Cadillac.html?category=SUV" class="view-store-btn">Visit Store</a>
+                </div>
+            </div>
+
+            <div class="brand-card cad-ev-card">
+                <div class="card-bg"></div>
+                <div class="brand-info">
+                    <h3>EVs</h3>
+                    <p>Experience the future of smart, eco-friendly driving with cutting-edge technology.</p>
+                    <a href="Cadillac.html?category=EV" class="view-store-btn">Visit Store</a>
+                </div>
+            </div>
+        </div>
+        <div class="brands-grid" id="dynamic-cars-grid" data-brand="Cadillac"></div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container footer-flex">
+            <p>&copy; 2026 DRIVE<span>X</span> Showroom. All Rights Reserved.</p>
+            <div class="footer-socials">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

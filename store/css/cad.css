@@ -1,0 +1,23 @@
+.hero-section-m {
+    height: 75vh;
+    background: url(../images/hero-cad.jpg) no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cad-sport-card .card-bg{
+    background: url(../images/cadspor.jpg)center center/cover;
+
+}
+
+.cad-suv-card .card-bg {
+    background: url(../images/cadsuv.jpg)center center/cover;
+}
+
+.cad-ev-card .card-bg {
+    background: url(../images/cadev.jpg)center center/cover;
+}
+

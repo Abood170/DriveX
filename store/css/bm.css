@@ -1,0 +1,21 @@
+.hero-section-m {
+    height: 75vh;
+    background: url(../images/hero-bmw.jpg) no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.bmw-sport-card .card-bg {
+    background: url(../images/bmsport.jpg)center center/cover;
+}
+.bmw-suv-card .card-bg {
+    background: url(../images/bmsuv.jpg)center center/cover;
+}
+
+.bmw-ev-card .card-bg {
+    background: url(../images/bmev.jpg)center center/cover;
+}
+

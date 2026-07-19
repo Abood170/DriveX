@@ -1,0 +1,35 @@
+.hero-section-m {
+    height: 75vh;
+    background: url(../images/hero-mer.jpg) no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.store-hero .hero-text {
+    position: relative;
+    z-index: 2;
+}
+
+.store-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.Mercedes-card .card-bg {
+    background: url(../images/mers.jpg)center center/cover;
+}
+.SUV-card .card-bg {
+    background: url(../images/mersuv1.jpg) center center/cover no-repeat;
+
+}
+
+.ev-card .card-bg {
+    background: url(../images/merev.jpg) center center/cover no-repeat;
+
+}
+

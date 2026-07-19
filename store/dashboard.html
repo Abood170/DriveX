@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRIVEX - Premium Admin Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="dashboard-wrapper">
+    <header class="dash-header">
+        <div class="dash-logo"><span>DRIVE</span>X Admin</div>
+        <a href="store.html" class="back-site-btn"><i class="fa-solid fa-arrow-left"></i> View Website</a>
+        
+    </header>
+
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fa-solid fa-car"></i>
+                </div>
+
+                <div class="stat-info">
+                    <h3 id="total-cars-count">0</h3>
+                    <p>Total Fleet</p>
+                </div>
+            
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-info">
+                    <h3 id="bmw-count">0</h3>
+                    <p>BMW Cars</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-info">
+                    <h3 id="merc-count">0</h3>
+                    <p>Mercedes</p>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-info">
+                    <h3 id="cad-count">0</h3>
+                    <p>Cadillac</p>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="main-dash-content">
+            <div class="form-container">
+                <h3 id="form-action-title"><i class="fa-solid fa-plus"></i> Add New Vehicle</h3>
+                
+                <form id="pure-car-form">
+                    <input type="hidden" id="car-id-field">
+
+                    <div class="form-group">
+                        <label>Image URL</label>
+                        <input type="text" id="car-class-name" placeholder="e.g., https://example.com/car.jpg" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Car Model & Year</label>
+                        <input type="text" id="car-model-year" placeholder="e.g., BMW M3 2026" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Price ($)</label>
+                        <input type="number" id="car-price" placeholder="e.g., 85000" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Condition</label>
+                        <select id="car-condition" required>
+                            <option value="New">New</option>
+                            <option value="Used">Used</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Brand Name</label>
+                        <select id="car-brand-select" required>
+                            <option value="BMW">BMW</option>
+                            <option value="Mercedes">Mercedes</option>
+                            <option value="Cadillac">Cadillac</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Car Category (Type)</label>
+                        <select id="car-type-select" required>
+                            <option value="Sports">Sports</option>
+                            <option value="SUV">SUV</option>
+                            <option value="EVs">EVs</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Features</label>
+                        <input type="text" id="car-features" placeholder="e.g., Autopilot, Leather Seats">
+                    </div>
+
+                    <button type="submit" id="submit-form-btn" class="btn-primary">Add Car to Showroom</button>
+                    <button type="button" id="cancel-form-btn" class="btn-secondary" style="display: none;">Cancel Edit</button>
+                </form>
+            
+            </div>
+
+            <div class="table-container-wrapper" style="flex-grow: 1; display: flex; flex-direction: column; gap: 20px;">
+                
+                <div class="table-container">
+                    <h3><i class="fa-solid fa-list"></i> Showroom Fleet</h3>
+                    <div class="responsive-table">
+                        <table class="modern-table">
+                            <thead>
+                                <tr>
+                                    <th>Model</th>
+                                    <th>Brand</th>
+                                    <th>Category</th>
+                                    <th>Price</th>
+                                    <th>Condition</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="fleet-table-rows">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <h3><i class="fa-solid fa-users"></i> Registered Users</h3>
+                    <div class="responsive-table">
+                        <table class="modern-table">
+                            <thead>
+                                <tr>
+                                    <th>Username</th>
+                                    <th>Email</th>
+                                    <th>Role</th>
+                                </tr>
+                            </thead>
+                            <tbody id="users-table-rows">
+                                </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Details - DRIVEX</title>
+    <link rel="stylesheet" href="css/car-single.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="car-gallery">
+            <img id="mainCarImage" src="https://via.placeholder.com/600x400" alt="Car Image">
+        </div>
+
+        <div class="car-info">
+            <span id="carCategory" class="badge"> Loading...</span>
+            <h1 id="carName">Loading Vehicle Details...</h1>
+            <div class="price-tag" id="carPrice">0.00 $</div>
+            
+            <hr>
+
+            <h3>Technical Specifications:</h3>
+            <ul class="specs-list">
+                <li><strong> engine / battery :</strong> <span id="carEngine">-</span></li>
+                <li><strong> manufacture year:</strong> <span id="carYear">-</span></li>
+                <li><strong> condition:</strong> <span id="carCondition">-</span></li>
+            </ul>
+
+            <button class="btn-action" id="btnOrder">Order this car now </button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

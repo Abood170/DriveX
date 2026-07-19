@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap');
+
+:root {
+    --main-color: #ff3e3e;     
+    --dark-bg: #0f1115;      
+    --card-bg: #181b22;      
+    --input-bg: #1f232d;       
+    --text-white: #ffffff;
+    --text-gray: #a0a5b1;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    background: url(../images/log.jpg)  no-repeat center center/cover ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-white);
+    min-height: 100vh;
+    display : flex;
+    justify-content : center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: var(--main-color);
+    border-radius: 50%;
+    filter: blur(150px);
+    opacity: 0.15;
+    z-index: 1;
+}
+
+form {
+    background-color: var(--card-bg); 
+    padding: 40px 30px;
+    border-radius: 15px;
+    border: 1px solid #232731;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+form h2 span {
+    color: var(--main-color);
+}
+
+form .subtitle {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border: 1px solid #3b3232;
+    border-radius: 10px;
+    font-size: 14px;
+    box-sizing: border-box; 
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+form input:focus {
+    border-color: var(--main-color);
+    box-shadow: 0 0 10px rgba(255, 62, 62, 0.2);
+}
+
+form input[type="date"] {
+    color: var(--text-gray);
+}
+
+form button {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #e03232;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 62, 62, 0.4);
+}
+
+form p {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    margin-top: 25px;
+}
+
+form p a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+form p a:hover {
+    text-decoration: underline; 
+}
+
+.back-home {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: var(--text-gray);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.back-home:hover {
+    color: var(--text-white);
+}
+
